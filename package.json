@@ -1,7 +1,7 @@
 {
-  "name": "react-controlled-portal",
+  "name": "react-teleportal",
   "version": "0.0.1",
-  "description": "Take control over your Portals.",
+  "description": "Alternative React portal implementation, giving you control over portal rendering.",
   "author": {
     "name": "Richard Scarrott",
     "url": "https://richardscarrott.com"
@@ -15,28 +15,46 @@
       "require": "./dist/portal.js"
     }
   },
-  "homepage": "https://github.com/richardscarrott/react-controlled-portal#readme",
-  "repository": "https://github.com/richardscarrott/react-controlled-portal",
+  "homepage": "https://github.com/richardscarrott/react-teleportal#readme",
+  "repository": "https://github.com/richardscarrott/react-teleportal",
   "keywords": [
     "react",
     "portal",
     "gateway",
     "wormhole",
+    "teleport",
     "animation",
-    "ssr"
+    "animate",
+    "transitionGroup",
+    "animatePresence",
+    "ssr",
+    "serverSideRender",
+    "inlet",
+    "outlet",
+    "controlled",
+    "modal",
+    "dialog"
   ],
+  "peerDependencies": {
+    "react": "^16.8.0 || ^17.0.0 || ^18.0.0"
+  },
   "devDependencies": {
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^13.4.0",
     "@types/jest": "^29.2.2",
+    "@types/react": "^18.0.25",
     "denoify": "^1.4.2",
     "esbuild": "^0.15.7",
     "jest": "^29.0.3",
+    "jest-environment-jsdom": "^29.3.1",
     "prettier": "^2.7.1",
+    "react": "^18.2.0",
     "ts-jest": "^29.0.3",
     "tsup": "^6.2.3",
     "typescript": "^4.8.3"
   },
   "scripts": {
-    "build": "tsup src/portal.ts --format esm,cjs --dts --clean && rm -rf deno_dist && denoify && rm deno_dist/**.test.ts && rm deno_dist/**.test-d.ts",
+    "build": "tsup src/portal.tsx --format esm,cjs --dts --clean && rm -rf deno_dist && denoify && rm deno_dist/**.test.tsx && rm deno_dist/**.test-d.tsx",
     "test": "jest",
     "prepublishOnly": "npm run test && npm run build"
   },
