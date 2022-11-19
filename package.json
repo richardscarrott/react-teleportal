@@ -1,6 +1,6 @@
 {
   "name": "react-teleportal",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Alternative React portal implementation, giving you control over portal rendering.",
   "author": {
     "name": "Richard Scarrott",
