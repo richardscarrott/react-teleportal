@@ -8,6 +8,12 @@ Alternative [React Portal](https://reactjs.org/docs/portals.html) implementation
 
 Primarily written to support uninterrupted exit animations when combined with components such as [`TransitionGroup`](https://reactcommunity.org/react-transition-group/transition-group) and [`AnimatePresence`](https://www.framer.com/docs/animate-presence/).
 
+## Install
+
+```
+npm install react-teleportal
+```
+
 ## Examples
 
 ### React Teleportal x React Transition Group
@@ -179,3 +185,7 @@ It's recommended to just statically include a `uuid` or similar at the call site
 ```
 
 > NOTE: If you're not animating (i.e. if the `<PortalOutlet />` unmounts the child immediately), then you can omit the key as React Teleportal is able to assign a key on your behalf.
+
+## License
+
+[MIT](LICENSE)
